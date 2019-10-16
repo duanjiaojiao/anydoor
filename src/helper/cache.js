@@ -4,8 +4,6 @@ function refreshRes(stats, res) {
 
   const { maxAge, expires, cacheControl, lastModified, eTag } = cache
   if (expires) {
-    console.log('hhh');
-
     res.setHeader('Expires', (new Date(Date.now() + maxAge * 1000)).toUTCString())
   }
   if (cacheControl) {
