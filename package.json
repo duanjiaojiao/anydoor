@@ -1,0 +1,37 @@
+{
+  "name": "anydoor",
+  "version": "1.0.0",
+  "description": "node 搭建静态资源服务器",
+  "main": "src/app.js",
+  "bin": {
+    "anydoor": "bin/anydoor"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duanjiaojiao/anydoor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "pre-commit": [
+    "lint",
+    "fix"
+  ],
+  "bugs": {
+    "url": "https://github.com/duanjiaojiao/anydoor/issues"
+  },
+  "homepage": "https://github.com/duanjiaojiao/anydoor#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "handlebars": "^4.4.3",
+    "yargs": "^14.2.0"
+  }
+}
